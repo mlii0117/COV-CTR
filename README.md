@@ -39,7 +39,7 @@ The core structure of ASGK consists of a medical graph encoder and a natural lan
 
 ![ov](https://github.com/Draven-Lee/COVCTR/blob/master/imgs/ov.jpg)
 
-{An overview of our ASGK approach. The ASGK model consists of a medical graph encoder and a natural language decoder. The medical graph encoder encodes input features into the corresponding medical tag graph, while the natural language decoder transfers high-level information to sentences or reports. The external signals guide the pretraining procedure, while the internal signals guide the model to bridge linguistic and visual information. T and MCS represent threshold and max connection select operation respectively.
+An overview of our ASGK approach. The ASGK model consists of a medical graph encoder and a natural language decoder. The medical graph encoder encodes input features into the corresponding medical tag graph, while the natural language decoder transfers high-level information to sentences or reports. The external signals guide the pretraining procedure, while the internal signals guide the model to bridge linguistic and visual information. T and MCS represent threshold and max connection select operation respectively.
 
 ![results](https://github.com/Draven-Lee/COVCTR/blob/master/imgs/results.jpg)
 
@@ -52,6 +52,6 @@ exceeds 0.5 and edges whose weights are more than 0.3. To read the image clearly
 
 
 
-The initial findings are summarised and submitted to the 34th NIPS, which are also available in Arxiv.
+The initial findings are summarised and submitted to the 34th NIPS which are also available in Arxiv.
 
 
