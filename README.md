@@ -39,7 +39,7 @@ In more detail, ASGK integrates internal visual feature fusion and external medi
 The core structure of ASGK consists of a medical graph encoder and a natural language decoder, inspired by advanced Generative Pre-Training (GPT).
 
 
-![ov](https://github.com/Draven-Lee/COVCTR/blob/master/imgs/ov.jpg)
+![ov]({{ "/imgs/ov.jpg" | prepend: site.baseurl }})
 
 An overview of our ASGK approach. The ASGK model consists of a medical graph encoder and a natural language decoder. The medical graph encoder encodes input features into the corresponding medical tag graph, while the natural language decoder transfers high-level information to sentences or reports. The external signals guide the pretraining procedure, while the internal signals guide the model to bridge linguistic and visual information. T and MCS represent threshold and max connection select operation respectively.
 
