@@ -13,6 +13,7 @@ The COV-CTR consists 728 images (349 for COVID-19 and 379 for Non-COVID) collect
 More information about these images could be found on [COVID-CT Dataset](https://github.com/UCSD-AI4H/COVID-CT).
 
 ![Sample](https://github.com/Draven-Lee/COVCTR/blob/master/imgs/2019-novel-Coronavirus-severe-adult-respiratory-dist_2020_International-Jour-p3-89%250.jpg)
+![Sample]({{ "/imgs/2019-novel-Coronavirus-severe-adult-respiratory-dist_2020_International-Jour-p3-89%250.jpg.jpg" | prepend: site.baseurl }})
 
 
 A sample from COV-CTR whose report is 
