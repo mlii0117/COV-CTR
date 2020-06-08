@@ -12,7 +12,7 @@ The [COV-CTR Dataset](https://github.com/Draven-Lee/COVCTR/blob/master/COV-CTR.z
 The COV-CTR consists 728 images (349 for COVID-19 and 379 for Non-COVID) collected from published papers and their corresponding paired Chinese reports. 
 More information about these images could be found on [COVID-CT Dataset](https://github.com/UCSD-AI4H/COVID-CT).
 
-![Sample](https://github.com/Draven-Lee/COVCTR/blob/master/imgs/2019-novel-Coronavirus-severe-adult-respiratory-dist_2020_International-Jour-p3-89%250.JPG)
+![Sample](https://github.com/Draven-Lee/COVCTR/blob/master/imgs/2019-novel-Coronavirus-severe-adult-respiratory-dist_2020_International-Jour-p3-89%250.jpg)
 
 
 A sample from COV-CTR whose report is 
@@ -37,11 +37,11 @@ In more detail, ASGK integrates internal visual feature fusion and external medi
 The core structure of ASGK consists of a medical graph encoder and a natural language decoder, inspired by advanced Generative Pre-Training (GPT).
 
 
-![ov](https://github.com/Draven-Lee/COVCTR/blob/master/imgs/ov.JPG)
+![ov](https://github.com/Draven-Lee/COVCTR/blob/master/imgs/ov.jpg)
 
 An overview of our ASGK approach. The ASGK model consists of a medical graph encoder and a natural language decoder. The medical graph encoder encodes input features into the corresponding medical tag graph, while the natural language decoder transfers high-level information to sentences or reports. The external signals guide the pretraining procedure, while the internal signals guide the model to bridge linguistic and visual information. T and MCS represent threshold and max connection select operation respectively.
 
-![results](https://github.com/Draven-Lee/COVCTR/blob/master/imgs/results.JPG)
+![results](https://github.com/Draven-Lee/COVCTR/blob/master/imgs/results.jpg)
 
 Sample output of our approach on both CX-CHR and COV-CTR datasets. 
 We use the outputs before the last pooling layer in DenseNet-121 to generate heat maps, 
