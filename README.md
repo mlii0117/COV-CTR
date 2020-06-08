@@ -12,8 +12,7 @@ The [COV-CTR Dataset](https://github.com/Draven-Lee/COVCTR/blob/master/COV-CTR.z
 The COV-CTR consists 728 images (349 for COVID-19 and 379 for Non-COVID) collected from published papers and their corresponding paired Chinese reports. 
 More information about these images could be found on [COVID-CT Dataset](https://github.com/UCSD-AI4H/COVID-CT).
 
-![Sample](https://github.com/Draven-Lee/COVCTR/blob/master/2019-novel-Coronavirus-severe-adult-respiratory-dist_2020_International-Jour-p3-89%250.png)
-<img src="/img/article/img_demo.png"/>
+![Sample](https://github.com/Draven-Lee/COVCTR/blob/master/2019-novel-Coronavirus-severe-adult-respiratory-dist_2020_International-Jour-p3-89%250.jpg)
 
 
 A sample from COV-CTR whose report is 
@@ -38,7 +37,7 @@ In more detail, ASGK integrates internal visual feature fusion and external medi
 The core structure of ASGK consists of a medical graph encoder and a natural language decoder, inspired by advanced Generative Pre-Training (GPT).
 The overview of ASGK is shown in the following image.
 
-![ov](https://github.com/Draven-Lee/COVCTR/blob/master/ov.png)
+![ov](https://github.com/Draven-Lee/COVCTR/blob/master/ov.jpg)
 
 An illustration of heat maps, auxiliary regions, medical tag graphs, and paragraphs of medical reports is presented. 
 It is clear from the results that auxiliary regions suggest the region on which the model should focus. 
@@ -47,7 +46,7 @@ In the fourth row, moreover, the auxiliary region focuses the inferior pleural o
 The medical tag graph demonstrates that ASGK is capable of encoding input features into a high-level knowledge graph; 
 as we lack the ground truth of the corresponding graph, we train in an end-to-end way to encode the graph.
 
-![results](https://github.com/Draven-Lee/COVCTR/blob/master/results.png)
+![results](https://github.com/Draven-Lee/COVCTR/blob/master/results.jpg)
 
 The initial findings are summarised and submitted to 34th NIPS, which are also available in Arxiv.
 
