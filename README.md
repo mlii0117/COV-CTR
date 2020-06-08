@@ -35,19 +35,23 @@ which causes serious data bias. This deviation is likely to teach models to gene
 To address these problems, we propose an Auxiliary Signal-Guided Knowledge Encoder-Decoder (ASGK) to mimic radiologists' working patterns. 
 In more detail, ASGK integrates internal visual feature fusion and external medical linguistic information to guide medical knowledge transfer and learning. 
 The core structure of ASGK consists of a medical graph encoder and a natural language decoder, inspired by advanced Generative Pre-Training (GPT).
-The overview of ASGK is shown in the following image.
 
-![ov](imgs/ov.jpg)
 
-An illustration of heat maps, auxiliary regions, medical tag graphs, and paragraphs of medical reports is presented. 
-It is clear from the results that auxiliary regions suggest the region on which the model should focus. 
-For example, in the first row, the auxiliary region focuses on the inferior lobe of the left lung which presents a shadow. 
-In the fourth row, moreover, the auxiliary region focuses the inferior pleural of the left lung, which covers ground-glass opacity, one of the symptoms of COVID-19. 
-The medical tag graph demonstrates that ASGK is capable of encoding input features into a high-level knowledge graph; 
-as we lack the ground truth of the corresponding graph, we train in an end-to-end way to encode the graph.
+![ov](https://github.com/Draven-Lee/COVCTR/blob/master/imgs/ov.jpg)
 
-![results](imgs/results.jpg)
+{An overview of our ASGK approach. The ASGK model consists of a medical graph encoder and a natural language decoder. The medical graph encoder encodes input features into the corresponding medical tag graph, while the natural language decoder transfers high-level information to sentences or reports. The external signals guide the pretraining procedure, while the internal signals guide the model to bridge linguistic and visual information. T and MCS represent threshold and max connection select operation respectively.
 
-The initial findings are summarised and submitted to 34th NIPS, which are also available in Arxiv.
+![results](https://github.com/Draven-Lee/COVCTR/blob/master/imgs/results.jpg)
+
+Sample output of our approach on both CX-CHR and COV-CTR datasets. 
+We use the outputs before the last pooling layer in DenseNet-121 to generate heat maps, 
+then threshold them by 0.7 to produce the auxiliary regions. 
+In the medical tag graphs, we show the nodes whose value (which is equal to the classification probability) 
+exceeds 0.5 and edges whose weights are more than 0.3. To read the image clearly, we show the values of
+ some edges in the appropriate places. The underlined text indicates alignment between ground truth reports and generated reports.
+
+
+
+The initial findings are summarised and submitted to the 34th NIPS, which are also available in Arxiv.
 
 
