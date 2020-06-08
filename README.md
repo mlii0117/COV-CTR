@@ -4,6 +4,7 @@ Since December 2019, the novel COVID-19 virus has caused a global pandemic and i
 A key step in controlling the infection is that of identifying infected people. 
 In addition to the Reverse Transcription Polymerase Chain Reaction (RT-PCR) tests, lung CT scan analysis has emerged as another essential testing method. 
 
+
 [Monash Machine Vision Group](http://www.mmvg.org/) recently constructed a COVID-19 CT Reports (COV-CTR) dataset and proposed a new medical report generation approach via AI technologies to describe lung CT images.
 
 ### COV-CTR Dataset
@@ -40,14 +41,15 @@ The core structure of ASGK consists of a medical graph encoder and a natural lan
 
 ![ov]({{ "/imgs/ov.jpg" | prepend: site.baseurl }})
 
-An overview of our ASGK approach. The ASGK model consists of a medical graph encoder and a natural language decoder. The medical graph encoder encodes input features into the corresponding medical tag graph, while the natural language decoder transfers high-level information to sentences or reports. The external signals guide the pretraining procedure, while the internal signals guide the model to bridge linguistic and visual information. T and MCS represent threshold and max connection select operation respectively.
+An overview of our ASGK approach. The ASGK model consists of a medical graph encoder and a natural language decoder. T and MCS represent threshold and max connection select operation respectively.
 
 ![results]({{ "/imgs/results.jpg" | prepend: site.baseurl }})
 
 Sample output of our approach on both CX-CHR and COV-CTR datasets. In the medical tag graphs, we show the nodes whose value (which is equal to the classification probability) 
-exceeds 0.5 and edges whose weights are more than 0.3. To read the image clearly, 
-we show the values of some edges in the appropriate places. The underlined text indicates alignment between ground truth reports and generated reports.
+exceeds 0.5 and edges whose weights are more than 0.3. To read the image clearly, we show the values of some edges in the appropriate places. 
+The underlined text indicates alignment between ground truth reports and generated reports.
 
-The initial findings are summarised and submitted to the 34th NIPS which are also available in Arxiv.
+
+The initial findings are summarised and submitted to the 34th NIPS which are also available in [Arxiv](https://arxiv.org/).
 
 
