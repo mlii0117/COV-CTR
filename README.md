@@ -14,6 +14,8 @@ More information about these images could be found on [COVID-CT Dataset](https:/
 
 ![Sample](https://github.com/Draven-Lee/COVCTR/blob/master/imgs/2019-novel-Coronavirus-severe-adult-respiratory-dist_2020_International-Jour-p3-89%250.jpg)
 
+<img src="imgs/2019-novel-Coronavirus-severe-adult-respiratory-dist_2020_International-Jour-p3-89%250.jpg" width="800" />
+
 
 A sample from COV-CTR whose report is 
 **The thorax was symmetrical, the mediastinal shadow was in the middle, 
