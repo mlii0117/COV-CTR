@@ -12,10 +12,9 @@ The [COV-CTR Dataset](https://github.com/Draven-Lee/COVCTR/blob/master/COV-CTR.z
 The COV-CTR consists 728 images (349 for COVID-19 and 379 for Non-COVID) collected from published papers and their corresponding paired Chinese reports. 
 More information about these images could be found on [COVID-CT Dataset](https://github.com/UCSD-AI4H/COVID-CT).
 
-
-
-
 ![Sample](https://github.com/Draven-Lee/COVCTR/blob/master/2019-novel-Coronavirus-severe-adult-respiratory-dist_2020_International-Jour-p3-89%250.png)
+
+
 A sample from COV-CTR whose report is 
 **The thorax was symmetrical, the mediastinal shadow was in the middle, 
 and no enlarged lymph nodes were found in the mediastinum. Bilateral lung texture clear, 
