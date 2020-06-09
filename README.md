@@ -53,4 +53,7 @@ The underlined text indicates alignment between ground truth reports and generat
 
 The initial findings are summarised and submitted to the 34th NIPS which are also available in [Arxiv](https://arxiv.org/abs/2006.03744).
 
+If you are interested in this dataset and would like to jointly augment this dataset, please connect us: Mingjie.Li@monash.edu
 
+
+If you use this dataset, please cite our [work](https://arxiv.org/abs/2006.03744).
