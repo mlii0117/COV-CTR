@@ -51,6 +51,6 @@ exceeds 0.5 and edges whose weights are more than 0.3. To read the image clearly
 The underlined text indicates alignment between ground truth reports and generated reports.
 
 
-The initial findings are summarised and submitted to the 34th NIPS which are also available in [Arxiv](https://arxiv.org/).
+The initial findings are summarised and submitted to the 34th NIPS which are also available in [Arxiv](https://arxiv.org/abs/2006.03744).
 
 
