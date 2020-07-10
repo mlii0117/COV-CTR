@@ -16,8 +16,7 @@ More information about these images could be found on [COVID-CT Dataset](https:/
 The **COV-CTR** including all images and paired Chinese reports is available online, 
 [DownLoad Now](https://github.com/Draven-Lee/COVID-19-CT-Reports-Generation/blob/master/Datasets).
 
-![sample]({{ "/imgs/2019-novel-Coronavirus-severe-adult-respiratory-dist_2020_International-Jour-p3-89%250.jpg" | prepend: site.baseurl }})
-<img src="imgs/2019-novel-Coronavirus-severe-adult-respiratory-dist_2020_International-Jour-p3-89%250.jpg" width="800" />
+<img src="imgs/2019-novel-Coronavirus-severe-adult-respiratory-dist_2020_International-Jour-p3-89%250.jpg"/>
 
 A sample from COV-CTR whose report is 
 **The thorax was symmetrical, the mediastinal shadow was in the middle, 
@@ -40,13 +39,11 @@ To address these problems, we propose an Auxiliary Signal-Guided Knowledge Encod
 In more detail, ASGK integrates internal visual feature fusion and external medical linguistic information to guide medical knowledge transfer and learning. 
 The core structure of ASGK consists of a medical graph encoder and a natural language decoder, inspired by advanced Generative Pre-Training (GPT).
 
-
-![ov]({{ "/imgs/ov.jpg" | prepend: site.baseurl }})
-![ov](https://github.com/Draven-Lee/COVCTR/blob/master/imgs/ov.jpg)
+<img src="imgs/ov.jpg"/>
 
 An overview of our ASGK approach. The ASGK model consists of a medical graph encoder and a natural language decoder. T and MCS represent threshold and max connection select operation respectively.
 
-![results]({{ "/imgs/results.jpg" | prepend: site.baseurl }})
+<img src="imgs/results.jpg"/>
 
 Sample output of our approach on both CX-CHR and COV-CTR datasets. In the medical tag graphs, we show the nodes whose value (which is equal to the classification probability) 
 exceeds 0.5 and edges whose weights are more than 0.3. To read the image clearly, we show the values of some edges in the appropriate places. 
