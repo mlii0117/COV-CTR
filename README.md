@@ -17,6 +17,7 @@ The **COV-CTR** including all images and paired Chinese reports is available onl
 [DownLoad Now](https://github.com/Draven-Lee/COVID-19-CT-Reports-Generation/blob/master/Datasets).
 
 ![sample]({{ "/imgs/2019-novel-Coronavirus-severe-adult-respiratory-dist_2020_International-Jour-p3-89%250.jpg" | prepend: site.baseurl }})
+<img src="imgs/2019-novel-Coronavirus-severe-adult-respiratory-dist_2020_International-Jour-p3-89%250.jpg" width="800" />
 
 A sample from COV-CTR whose report is 
 **The thorax was symmetrical, the mediastinal shadow was in the middle, 
@@ -41,6 +42,7 @@ The core structure of ASGK consists of a medical graph encoder and a natural lan
 
 
 ![ov]({{ "/imgs/ov.jpg" | prepend: site.baseurl }})
+![ov](https://github.com/Draven-Lee/COVCTR/blob/master/imgs/ov.jpg)
 
 An overview of our ASGK approach. The ASGK model consists of a medical graph encoder and a natural language decoder. T and MCS represent threshold and max connection select operation respectively.
 
