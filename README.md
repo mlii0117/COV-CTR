@@ -16,41 +16,34 @@ More information about these images could be found on [COVID-CT Dataset](https:/
 The **COV-CTR** including all images and paired Chinese reports is available online, 
 [DownLoad Now](https://github.com/Draven-Lee/COVID-19-CT-Reports-Generation/blob/master/Datasets).
 
-<img src="imgs/2019-novel-Coronavirus-severe-adult-respiratory-dist_2020_International-Jour-p3-89%250.jpg"/>
+<img src="imgs/motivate.png"/>
 
-A sample from COV-CTR whose report is 
-**The thorax was symmetrical, the mediastinal shadow was in the middle, 
-and no enlarged lymph nodes were found in the mediastinum. Bilateral lung texture clear, 
-the right upper lobe of the pleura can be seen small patches and lamellar ground glass shadow, edge unclear. 
-The bronchi of the lobes were unobstructed, and there was no abnormal density shadow in the thoracic cavity on both sides.**
+One sample in our COV-CTR dataset. Including the CT-scan,  findings,  impressions,  and  our  generated  report.   The  redwords describe the abnormal terminologies.  A radiologist anno-tated the red bounding box to indicate the region that he paid moreattention to diagnosing this image.
 
 
-### Auxiliary Signal-Guided Knowledge Encoder-Decoder for Medical Report Generation
+### Auxiliary Signals Driven Transformer For Medical Report Generation
 
-Beyond the common difficulties faced in the natural image captioning, 
-medical report generation specifically requires the model to describe a medical 
-image with a fine-grained and semantic-coherence paragraph that should satisfy both medical commonsense and logic. 
-Previous works generally extract the global image features and attempt to generate a paragraph that is similar to referenced reports; 
-however, this approach has two limitations. Firstly, the regions of primary interest to radiologists are usually located in a small area of the global image, 
-meaning that the remainder parts of the image could be considered as irrelevant noise in the training procedure. 
-Secondly, there are many similar sentences used in each medical report to describe the normal regions of the image, 
-which causes serious data bias. This deviation is likely to teach models to generate these inessential sentences on a regular basis. 
-To address these problems, we propose an Auxiliary Signal-Guided Knowledge Encoder-Decoder (ASGK) to mimic radiologists' working patterns. 
-In more detail, ASGK integrates internal visual feature fusion and external medical linguistic information to guide medical knowledge transfer and learning. 
-The core structure of ASGK consists of a medical graph encoder and a natural language decoder, inspired by advanced Generative Pre-Training (GPT).
+Medical reports have significant clinical value to radiologists and specialists, especially during a pandemic like COVID.
+However, beyond the common difficulties faced in natural image captioning tasks, small-sized datasets, limited annotations, and severe data deviation are remaining bottlenecks for the advancement of medical report generation approaches.
+Inspired by the radiologists' working patterns, in this paper, we investigate two kinds of auxiliary signals to drive Transformer for medical report generation to address these problems.
+Specifically, the auxiliary patches are explored to expand the widely used visual patch features before fed to the Transformer encoder, while the external linguistic signals help the decoder better master prior knowledge during the pre-training process.
+Our approach performs well on common benchmarks, including CX-CHR, IU X-Ray, and COVID-19 CT Report dataset (COV-CTR), demonstrating combining auxiliary signals with transformer architecture can bring a significant improvement in terms of medical report generation.
+The experimental results confirm that auxiliary signals driven Transformer-based models are with solid capabilities to outperform previous approaches on both medical terminology classification and paragraph generation metrics.
+Code is enclosed in the supplementary materials.
 
-<img src="imgs/ov.jpg"/>
+<img src="imgs/overview.png"/>
 
 An overview of our ASGK approach. The ASGK model consists of a medical graph encoder and a natural language decoder. T and MCS represent threshold and max connection select operation respectively.
 
-<img src="imgs/results.jpg"/>
+<img src="imgs/results.png"/>
 
-Sample output of our approach on both CX-CHR and COV-CTR datasets. In the medical tag graphs, we show the nodes whose value (which is equal to the classification probability) 
-exceeds 0.5 and edges whose weights are more than 0.3. To read the image clearly, we show the values of some edges in the appropriate places. 
-The underlined text indicates alignment between ground truth reports and generated reports.
+Sample outputs of our approach on IU X-Ray and COV-CTR. The red words represent the matched abnormal terminologies. The words in blue are missed abnormal terminologies.
 
+<img src="imgs/metric.png"/>
 
-The initial findings are summarised and submitted to the 34th NIPS which are also available in [Arxiv](https://arxiv.org/abs/2006.03744).
+We evaluate our model each epoch and report BLEU-4 and CIDER values on validation and testing sets.
+
+The initial findings are summarised and submitted to the ICCV which are also available in [Arxiv](https://arxiv.org/abs/2006.03744).
 
 If you are interested in this dataset and would like to jointly augment this dataset, please connect us: Mingjie.Li@monash.edu
 
