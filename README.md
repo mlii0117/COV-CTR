@@ -33,7 +33,7 @@ Code is enclosed in the supplementary materials.
 
 <img src="imgs/overview.png"/>
 
-An overview of our ASGK approach. The ASGK model consists of a medical graph encoder and a natural language decoder. T and MCS represent threshold and max connection select operation respectively.
+The architecture of our approach. The grey dashed boxes represent that the including parts are replaceable, and their details are omitted. The blue dashed boxes are the inputs and outputs of the Transformer. The red dashed lines only work during the pre-training step. The red lines represent the input of the cross-attention module in the Transformer decoder layer.
 
 <img src="imgs/results.png"/>
 
