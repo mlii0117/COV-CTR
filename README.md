@@ -14,7 +14,7 @@ The COV-CTR consists 728 images (349 for COVID-19 and 379 for Non-COVID) collect
 More information about these images could be found on [COVID-CT Dataset](https://github.com/UCSD-AI4H/COVID-CT).
 
 The **COV-CTR** including all images and paired Chinese reports is available online, 
-[DownLoad Now](https://github.com/Draven-Lee/COVID-19-CT-Reports-Generation/blob/master/Datasets).
+[DownLoad Now](https://github.com/mlii0117/COV-CTR/tree/master/Datasets).
 
 <img src="imgs/motivate.png"/>
 
