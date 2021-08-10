@@ -1,3 +1,9 @@
+10/08/2021:
+Greetings, we have updated our dataset and released the English reports.
+
+Furthermore, we have modified the format of the csv file.
+
+
 We have updated the report.csv which add the impression for each image.
 
 For Mac users, please use 'encoding='gbk'' to read the csv file.
