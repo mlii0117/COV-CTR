@@ -1,3 +1,8 @@
+## News
+
+Our work has been accpeted by the WWWJ2022. We will upload the code recently.
+
+
 ## Welcome
 
 Since December 2019, the novel COVID-19 virus has caused a global pandemic and infected millions of people across 200 countries. 
@@ -49,4 +54,13 @@ Our code will be available once the paper is accpeted.
 
 If you are interested in this dataset and would like to jointly augment this dataset, please connect us: Mingjie.Li@monash.edu
 
-If you use this dataset, please cite our [work](https://arxiv.org/abs/2006.03744).
+If you use this dataset, please cite our work
+
+~~~
+@article{li2020auxiliary,
+  title={Auxiliary signal-guided knowledge encoder-decoder for medical report generation},
+  author={Li, Mingjie and Wang, Fuyu and Chang, Xiaojun and Liang, Xiaodan},
+  journal={arXiv preprint arXiv:2006.03744},
+  year={2020}
+}
+~~~
