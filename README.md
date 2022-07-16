@@ -34,11 +34,6 @@ Inspired by the radiologists' working patterns, in this paper, we investigate tw
 Specifically, the auxiliary patches are explored to expand the widely used visual patch features before fed to the Transformer encoder, while the external linguistic signals help the decoder better master prior knowledge during the pre-training process.
 Our approach performs well on common benchmarks, including CX-CHR, IU X-Ray, and COVID-19 CT Report dataset (COV-CTR), demonstrating combining auxiliary signals with transformer architecture can bring a significant improvement in terms of medical report generation.
 The experimental results confirm that auxiliary signals driven Transformer-based models are with solid capabilities to outperform previous approaches on both medical terminology classification and paragraph generation metrics.
-Code is enclosed in the supplementary materials.
-
-<img src="imgs/overview.png"/>
-
-The architecture of our approach. The grey dashed boxes represent that the including parts are replaceable, and their details are omitted. The blue dashed boxes are the inputs and outputs of the Transformer. The red dashed lines only work during the pre-training step. The red lines represent the input of the cross-attention module in the Transformer decoder layer.
 
 <img src="imgs/results.png"/>
 
@@ -48,13 +43,11 @@ Sample outputs of our approach on IU X-Ray and COV-CTR. The red words represent 
 
 We evaluate our model each epoch and report BLEU-4 and CIDER values on validation and testing sets.
 
-The initial findings are summarised and submitted to the ICCV which are also available in [Arxiv](https://arxiv.org/abs/2006.03744).
-
-Our code will be available once the paper is accpeted.
+Paper is available in [Arxiv](https://arxiv.org/abs/2006.03744).
 
 If you are interested in this dataset and would like to jointly augment this dataset, please connect us: Mingjie.Li@monash.edu
 
-If you use this dataset, please cite our work
+If you use this dataset and code, please cite our work.
 
 ~~~
 @article{li2020auxiliary,
