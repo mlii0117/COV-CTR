@@ -1,6 +1,6 @@
 ## News
 
-Our work has been published by the WWWJ2022. This is the official project page for our paper title "Auxiliary signal-guided knowledge encoder-decoder for medical report generation" along with both dataset and code.
+Our work has been accpeted by the WWWJ2022. This is the official project page for our paper title "Auxiliary signal-guided knowledge encoder-decoder for medical report generation" along with both dataset and code.
 
 
 ## Welcome
