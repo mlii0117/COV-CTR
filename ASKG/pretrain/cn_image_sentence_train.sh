@@ -1,0 +1,13 @@
+CUDA_VISIBLE_DEVICES=1 python3 cn_image_sentence_train.py \
+--num_medterm 229 \
+--num_termclass 229 \
+--train_batch_size 16 \
+--eval_batch_size 16 \
+--max_epochs 15 \
+--num_disease 14 \
+--data_dir /home/mmvg/Desktop/COVID/reports \
+--checkpoint_path /home/mmvg/Desktop/COVID/reports/log_cn_image_precise_encoder \
+--encoder_path /home/mmvg/Desktop/COVID/reports/log_cn_encoder \
+--learning_rate 5e-5 \
+--cnn_learning_rate 1e-5 \
+--learning_rate_decay_start 0 \
