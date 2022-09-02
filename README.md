@@ -50,10 +50,12 @@ If you are interested in this dataset and would like to jointly augment this dat
 If you use this dataset and code, please cite our work.
 
 ~~~
-@article{li2020auxiliary,
+@article{li2022auxiliary,
   title={Auxiliary signal-guided knowledge encoder-decoder for medical report generation},
-  author={Li, Mingjie and Wang, Fuyu and Chang, Xiaojun and Liang, Xiaodan},
-  journal={arXiv preprint arXiv:2006.03744},
-  year={2020}
+  author={Li, Mingjie and Liu, Rui and Wang, Fuyu and Chang, Xiaojun and Liang, Xiaodan},
+  journal={World Wide Web},
+  pages={1--18},
+  year={2022},
+  publisher={Springer}
 }
 ~~~
